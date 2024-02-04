@@ -1,0 +1,23 @@
+{
+    "_id":"American Oystercatcher",
+    "type": "Species",
+    "properties":{
+        "has_AOS4" : "AMOY",
+        "has_SGCN" : 1
+    },
+    "categories":[
+        "Species",
+        "SGCN",
+        "Bird"
+    ],
+    "edges":{
+        "Piping Plover": {
+            "to": "Piping Plover"
+        },
+        "Dune and Beach": {
+            "to" : "Dune and Beach"
+        }
+    }
+
+
+}

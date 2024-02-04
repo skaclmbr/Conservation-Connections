@@ -1,0 +1,914 @@
+﻿type,title
+Species,American Oystercatcher
+Species,Piping Plover
+Species,American Goldfinch
+Species,Velvet Scoter
+Species,Acadian Flycatcher
+Species,Alder Flycatcher
+Species,American Avocet
+Species,American Bittern
+Species,American Black Duck
+Species,American Coot
+Species,American Crow
+Species,American Kestrel
+Species,American Pipit
+Species,American Redstart
+Species,American Robin
+Species,American Wigeon
+Species,American Woodcock
+Species,Anhinga
+Species,Bachman's Sparrow
+Species,Bachman's Warbler
+Species,Bald Eagle
+Species,Baltimore Oriole
+Species,Bank Swallow
+Species,Barn Owl
+Species,Barn Swallow
+Species,Barred Owl
+Species,Bay-breasted Warbler
+Species,Belted Kingfisher
+Species,Bewick's Wren
+Species,Black-and-white Warbler
+Species,Black-bellied Plover
+Species,Black-billed Cuckoo
+Species,Blackburnian Warbler
+Species,Black-capped Chickadee
+Species,Black-crowned Night-Heron
+Species,Black-necked Stilt
+Species,Blackpoll Warbler
+Species,Black Rail
+Species,Black Scoter
+Species,Black Skimmer
+Species,Black-throated Blue Warbler
+Species,Black-throated Green Warbler
+Species,Black Vulture
+Species,Blue-gray Gnatcatcher
+Species,Blue Grosbeak
+Species,Blue-headed Vireo
+Species,Blue Jay
+Species,Blue-winged Teal
+Species,Blue-winged Warbler
+Species,Red-eyed Vireo
+Species,Redhead
+Species,Red-headed Woodpecker
+Species,Red Knot
+Species,Red-necked Phalarope
+Species,Red-shouldered Hawk
+Species,Red-tailed Hawk
+Species,Red-throated Loon
+Species,Red-winged Blackbird
+Species,Ring-billed Gull
+Species,Ring-necked Duck
+Species,Rock Pigeon
+Species,Roseate Tern
+Species,Rose-breasted Grosbeak
+Species,Royal Tern
+Species,Ruby-crowned Kinglet
+Species,Ruby-throated Hummingbird
+Species,Ruddy Duck
+Species,Ruddy Turnstone
+Species,Ruffed Grouse
+Species,Rufous Hummingbird
+Species,Rusty Blackbird
+Species,Saltmarsh Sparrow
+Species,Sanderling
+Species,Sandwich Tern
+Species,Savannah Sparrow
+Species,Scarlet Tanager
+Species,Seaside Sparrow
+Species,Sedge Wren
+Species,Semipalmated Plover
+Species,Semipalmated Sandpiper
+Species,Sharp-shinned Hawk
+Species,Short-billed Dowitcher
+Species,Short-eared Owl
+Species,Snow Goose
+Species,Snowy Egret
+Species,Solitary Sandpiper
+Species,Song Sparrow
+Species,Sora
+Species,Spotted Sandpiper
+Species,Stilt Sandpiper
+Species,Summer Tanager
+Species,Surf Scoter
+Species,Swainson's Thrush
+Species,Swainson's Warbler
+Species,Swallow-tailed Kite
+Species,Swamp Sparrow
+Species,Tennessee Warbler
+Species,Tree Swallow
+Species,Tricolored Heron
+Species,Tufted Titmouse
+Species,Tundra Swan
+Species,Turkey Vulture
+Species,Upland Sandpiper
+Species,Veery
+Species,Vesper Sparrow
+Species,Virginia Rail
+Species,Warbling Vireo
+Species,Western Sandpiper
+Species,Whimbrel
+Species,Eastern Whip-poor-will
+Species,White-breasted Nuthatch
+Species,White-crowned Sparrow
+Species,White-eyed Vireo
+Species,White Ibis
+Species,White-rumped Sandpiper
+Species,White-throated Sparrow
+Species,White-winged Scoter
+Species,Wild Turkey
+Species,Willet
+Species,Willow Flycatcher
+Species,Wilson's Plover
+Species,Wilson's Snipe
+Species,Winter Wren
+Species,Wood Duck
+Species,Wood Stork
+Species,Wood Thrush
+Species,Worm-eating Warbler
+Species,Yellow-bellied Sapsucker
+Species,Yellow-billed Cuckoo
+Species,Yellow-breasted Chat
+Species,Yellow-crowned Night-Heron
+Species,Yellow Rail
+Species,Yellow-rumped Warbler
+Species,Yellow-throated Vireo
+Species,Least Bittern
+Species,Yellow Warbler
+Species,Boat-tailed Grackle
+Species,Bobolink
+Species,Bonaparte's Gull
+Species,Brant
+Species,Brewer's Blackbird
+Species,Broad-winged Hawk
+Species,Brown Creeper
+Species,Brown-headed Cowbird
+Species,Brown-headed Nuthatch
+Species,Brown Pelican
+Species,Brown Thrasher
+Species,Bufflehead
+Species,Canada Goose
+Species,Canada Warbler
+Species,Canvasback
+Species,Cape May Warbler
+Species,Carolina Chickadee
+Species,Carolina Wren
+Species,Caspian Tern
+Species,Cattle Egret
+Species,Cedar Waxwing
+Species,Cerulean Warbler
+Species,Chestnut-sided Warbler
+Species,Chimney Swift
+Species,Chipping Sparrow
+Species,Chuck-will's-widow
+Species,Clapper Rail
+Species,Clay-colored Sparrow
+Species,Cliff Swallow
+Species,Common Gallinule
+Species,Common Goldeneye
+Species,Common Grackle
+Species,Common Loon
+Species,Common Merganser
+Species,Common Nighthawk
+Species,Common Raven
+Species,Common Tern
+Species,Common Yellowthroat
+Species,Connecticut Warbler
+Species,Cooper's Hawk
+Species,Dark-eyed Junco
+Species,Dickcissel
+Species,Double-crested Cormorant
+Species,Downy Woodpecker
+Species,Dunlin
+Species,Eastern Bluebird
+Species,Eastern Kingbird
+Species,Eastern Meadowlark
+Species,Painted Bunting
+Species,Eastern Phoebe
+Species,Eastern Screech-Owl
+Species,Eastern Towhee
+Species,Eastern Wood-Pewee
+Species,European Starling
+Species,Evening Grosbeak
+Species,Field Sparrow
+Species,Golden Eagle
+Species,Fish Crow
+Species,Forster's Tern
+Species,Fox Sparrow
+Species,Gadwall
+Species,Glossy Ibis
+Species,Golden-crowned Kinglet
+Species,Golden-winged Warbler
+Species,Grasshopper Sparrow
+Species,Gray Catbird
+Species,Gray-cheeked Thrush
+Species,Great Black-backed Gull
+Species,Great Blue Heron
+Species,Great Crested Flycatcher
+Species,Great Egret
+Species,Greater Scaup
+Species,Greater Yellowlegs
+Species,Great Horned Owl
+Species,Green Heron
+Species,Green-winged Teal
+Species,Gull-billed Tern
+Species,Hairy Woodpecker
+Species,Henslow's Sparrow
+Species,Hermit Thrush
+Species,Herring Gull
+Species,Hooded Merganser
+Species,Hooded Warbler
+Species,Horned Grebe
+Species,Horned Lark
+Species,House Wren
+Species,Indigo Bunting
+Species,Ivory-billed Woodpecker
+Species,Kentucky Warbler
+Species,Killdeer
+Species,King Rail
+Species,Kirtland's Warbler
+Species,Lark Sparrow
+Species,Laughing Gull
+Species,Least Flycatcher
+Species,Least Sandpiper
+Species,Least Tern
+Species,LeConte's Sparrow
+Species,Lesser Scaup
+Species,Lesser Yellowlegs
+Species,Lincoln's Sparrow
+Species,Little Blue Heron
+Species,Loggerhead Shrike
+Species,Long-billed Dowitcher
+Species,Long-tailed Duck
+Species,Louisiana Waterthrush
+Species,Magnolia Warbler
+Species,Marbled Godwit
+Species,Marsh Wren
+Species,Merlin
+Species,Mississippi Kite
+Species,Mourning Dove
+Species,Nashville Warbler
+Species,Nelson's Sparrow
+Species,Northern Bobwhite
+Species,Northern Cardinal
+Species,Northern Flicker
+Species,Northern Gannet
+Species,Northern Harrier
+Species,Northern Mockingbird
+Species,Northern Parula
+Species,Northern Pintail
+Species,Northern Rough-winged Swallow
+Species,Northern Saw-whet Owl
+Species,Northern Shoveler
+Species,Northern Waterthrush
+Species,Olive-sided Flycatcher
+Species,Orange-crowned Warbler
+Species,Orchard Oriole
+Species,Osprey
+Species,Ovenbird
+Species,Palm Warbler
+Species,Pectoral Sandpiper
+Species,Peregrine Falcon
+Species,Philadelphia Vireo
+Species,Pied-billed Grebe
+Species,Pileated Woodpecker
+Species,Pine Siskin
+Species,Pine Warbler
+Species,Prairie Warbler
+Species,Prothonotary Warbler
+Species,Purple Finch
+Species,Purple Martin
+Species,Purple Sandpiper
+Species,Red-bellied Woodpecker
+Species,Red-breasted Merganser
+Species,Red-breasted Nuthatch
+Species,Red-cockaded Woodpecker
+Species,Red Crossbill
+Species,Reddish Egret
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 171
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 172
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 173
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 174
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 175
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 193
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 194
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 195
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 229
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 230
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 231
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 233
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 234
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 235
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 236
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 277
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 278
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 286
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 303
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 304
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 305
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 316
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 317
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 330
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 331
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 340
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 341
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 357
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 358
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 380
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 381
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 391
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 392
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 393
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 394
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 421
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 422
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 423
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 438
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 439
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 453
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 454
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 455
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 469
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 470
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 471
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 472
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 473
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 474
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 483
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 484
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 500
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 501
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 502
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 53
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 530
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 531
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 532
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 533
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 54
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 548
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 549
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 55
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 56
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 57
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 58
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 584
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 588
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 589
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 59
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 600
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 601
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 602
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 606
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 75
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 76
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 88
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 93
+Priority,NCWAP 2015 Management Practices Priority 102
+Priority,NCWAP 2015 Management Practices Priority 103
+Priority,NCWAP 2015 Management Practices Priority 113
+Priority,NCWAP 2015 Management Practices Priority 114
+Priority,NCWAP 2015 Management Practices Priority 115
+Priority,NCWAP 2015 Management Practices Priority 123
+Priority,NCWAP 2015 Management Practices Priority 124
+Priority,NCWAP 2015 Management Practices Priority 125
+Priority,NCWAP 2015 Management Practices Priority 126
+Priority,NCWAP 2015 Management Practices Priority 127
+Priority,NCWAP 2015 Management Practices Priority 141
+Priority,NCWAP 2015 Management Practices Priority 142
+Priority,NCWAP 2015 Management Practices Priority 143
+Priority,NCWAP 2015 Management Practices Priority 144
+Priority,NCWAP 2015 Management Practices Priority 145
+Priority,NCWAP 2015 Management Practices Priority 146
+Priority,NCWAP 2015 Management Practices Priority 147
+Priority,NCWAP 2015 Management Practices Priority 164
+Priority,NCWAP 2015 Management Practices Priority 165
+Priority,NCWAP 2015 Management Practices Priority 166
+Priority,NCWAP 2015 Management Practices Priority 167
+Priority,NCWAP 2015 Management Practices Priority 168
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 104
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 105
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 116
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 117
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 118
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 128
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 129
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 130
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 148
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 149
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 15
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 150
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 151
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 152
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 153
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 154
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 16
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 17
+Priority,NCWAP 2015 Conservation Programs And Partnerships Priority 170
+Priority,NCWAP 2015 Management Practices Priority 169
+Priority,NCWAP 2015 Management Practices Priority 184
+Priority,NCWAP 2015 Management Practices Priority 189
+Priority,NCWAP 2015 Management Practices Priority 190
+Priority,NCWAP 2015 Management Practices Priority 223
+Priority,NCWAP 2015 Management Practices Priority 224
+Priority,NCWAP 2015 Management Practices Priority 225
+Priority,NCWAP 2015 Management Practices Priority 226
+Priority,NCWAP 2015 Management Practices Priority 228
+Priority,NCWAP 2015 Management Practices Priority 273
+Priority,NCWAP 2015 Management Practices Priority 274
+Priority,NCWAP 2015 Management Practices Priority 275
+Priority,NCWAP 2015 Management Practices Priority 276
+Priority,NCWAP 2015 Management Practices Priority 284
+Priority,NCWAP 2015 Management Practices Priority 285
+Priority,NCWAP 2015 Management Practices Priority 292
+Priority,NCWAP 2015 Management Practices Priority 300
+Priority,NCWAP 2015 Management Practices Priority 301
+Priority,NCWAP 2015 Management Practices Priority 302
+Priority,NCWAP 2015 Management Practices Priority 314
+Priority,NCWAP 2015 Management Practices Priority 315
+Priority,NCWAP 2015 Management Practices Priority 326
+Priority,NCWAP 2015 Management Practices Priority 327
+Priority,NCWAP 2015 Management Practices Priority 328
+Priority,NCWAP 2015 Management Practices Priority 329
+Priority,NCWAP 2015 Management Practices Priority 338
+Priority,NCWAP 2015 Management Practices Priority 339
+Priority,NCWAP 2015 Management Practices Priority 355
+Priority,NCWAP 2015 Management Practices Priority 356
+Priority,NCWAP 2015 Management Practices Priority 372
+Priority,NCWAP 2015 Management Practices Priority 373
+Priority,NCWAP 2015 Management Practices Priority 374
+Priority,NCWAP 2015 Management Practices Priority 375
+Priority,NCWAP 2015 Management Practices Priority 376
+Priority,NCWAP 2015 Management Practices Priority 377
+Priority,NCWAP 2015 Management Practices Priority 378
+Priority,NCWAP 2015 Management Practices Priority 379
+Priority,NCWAP 2015 Management Practices Priority 388
+Priority,NCWAP 2015 Management Practices Priority 389
+Priority,NCWAP 2015 Management Practices Priority 390
+Priority,NCWAP 2015 Management Practices Priority 401
+Priority,NCWAP 2015 Management Practices Priority 418
+Priority,NCWAP 2015 Management Practices Priority 419
+Priority,NCWAP 2015 Management Practices Priority 42
+Priority,NCWAP 2015 Management Practices Priority 420
+Priority,NCWAP 2015 Management Practices Priority 43
+Priority,NCWAP 2015 Management Practices Priority 434
+Priority,NCWAP 2015 Management Practices Priority 435
+Priority,NCWAP 2015 Management Practices Priority 436
+Priority,NCWAP 2015 Management Practices Priority 437
+Priority,NCWAP 2015 Management Practices Priority 44
+Priority,NCWAP 2015 Management Practices Priority 45
+Priority,NCWAP 2015 Management Practices Priority 451
+Priority,NCWAP 2015 Management Practices Priority 452
+Priority,NCWAP 2015 Management Practices Priority 46
+Priority,NCWAP 2015 Management Practices Priority 463
+Priority,NCWAP 2015 Management Practices Priority 464
+Priority,NCWAP 2015 Management Practices Priority 465
+Priority,NCWAP 2015 Management Practices Priority 466
+Priority,NCWAP 2015 Management Practices Priority 467
+Priority,NCWAP 2015 Management Practices Priority 468
+Priority,NCWAP 2015 Management Practices Priority 47
+Priority,NCWAP 2015 Management Practices Priority 48
+Priority,NCWAP 2015 Management Practices Priority 481
+Priority,NCWAP 2015 Management Practices Priority 482
+Priority,NCWAP 2015 Management Practices Priority 49
+Priority,NCWAP 2015 Management Practices Priority 495
+Priority,NCWAP 2015 Management Practices Priority 496
+Priority,NCWAP 2015 Management Practices Priority 497
+Priority,NCWAP 2015 Management Practices Priority 498
+Priority,NCWAP 2015 Management Practices Priority 499
+Priority,NCWAP 2015 Management Practices Priority 50
+Priority,NCWAP 2015 Management Practices Priority 508
+Priority,NCWAP 2015 Management Practices Priority 509
+Priority,NCWAP 2015 Management Practices Priority 51
+Priority,NCWAP 2015 Management Practices Priority 510
+Priority,NCWAP 2015 Management Practices Priority 511
+Priority,NCWAP 2015 Management Practices Priority 519
+Priority,NCWAP 2015 Management Practices Priority 52
+Priority,NCWAP 2015 Management Practices Priority 520
+Priority,NCWAP 2015 Management Practices Priority 521
+Priority,NCWAP 2015 Management Practices Priority 522
+Priority,NCWAP 2015 Management Practices Priority 526
+Priority,NCWAP 2015 Management Practices Priority 527
+Priority,NCWAP 2015 Management Practices Priority 528
+Priority,NCWAP 2015 Management Practices Priority 545
+Priority,NCWAP 2015 Management Practices Priority 546
+Priority,NCWAP 2015 Management Practices Priority 547
+Priority,NCWAP 2015 Management Practices Priority 561
+Priority,NCWAP 2015 Management Practices Priority 562
+Priority,NCWAP 2015 Management Practices Priority 564
+Priority,NCWAP 2015 Management Practices Priority 576
+Priority,NCWAP 2015 Management Practices Priority 577
+Priority,NCWAP 2015 Management Practices Priority 580
+Priority,NCWAP 2015 Management Practices Priority 581
+Priority,NCWAP 2015 Management Practices Priority 582
+Priority,NCWAP 2015 Management Practices Priority 583
+Priority,NCWAP 2015 Management Practices Priority 598
+Priority,NCWAP 2015 Management Practices Priority 599
+Priority,NCWAP 2015 Management Practices Priority 605
+Priority,NCWAP 2015 Management Practices Priority 612
+Priority,NCWAP 2015 Management Practices Priority 613
+Priority,NCWAP 2015 Management Practices Priority 614
+Priority,NCWAP 2015 Management Practices Priority 615
+Priority,NCWAP 2015 Management Practices Priority 616
+Priority,NCWAP 2015 Management Practices Priority 617
+Priority,NCWAP 2015 Management Practices Priority 73
+Priority,NCWAP 2015 Management Practices Priority 74
+Priority,NCWAP 2015 Management Practices Priority 87
+Priority,NCWAP 2015 Management Practices Priority 92
+Priority,NCWAP 2015 Monitoring Priority 100
+Priority,NCWAP 2015 Monitoring Priority 101
+Priority,NCWAP 2015 Monitoring Priority 11
+Priority,NCWAP 2015 Monitoring Priority 111
+Priority,NCWAP 2015 Monitoring Priority 112
+Priority,NCWAP 2015 Monitoring Priority 12
+Priority,NCWAP 2015 Monitoring Priority 121
+Priority,NCWAP 2015 Monitoring Priority 122
+Priority,NCWAP 2015 Monitoring Priority 13
+Priority,NCWAP 2015 Monitoring Priority 137
+Priority,NCWAP 2015 Monitoring Priority 138
+Priority,NCWAP 2015 Monitoring Priority 139
+Priority,NCWAP 2015 Monitoring Priority 14
+Priority,NCWAP 2015 Monitoring Priority 140
+Priority,NCWAP 2015 Monitoring Priority 161
+Priority,NCWAP 2015 Monitoring Priority 162
+Priority,NCWAP 2015 Monitoring Priority 163
+Priority,NCWAP 2015 Monitoring Priority 181
+Priority,NCWAP 2015 Monitoring Priority 182
+Priority,NCWAP 2015 Monitoring Priority 183
+Priority,NCWAP 2015 Monitoring Priority 185
+Priority,NCWAP 2015 Monitoring Priority 188
+Priority,NCWAP 2015 Monitoring Priority 192
+Priority,NCWAP 2015 Monitoring Priority 215
+Priority,NCWAP 2015 Monitoring Priority 217
+Priority,NCWAP 2015 Monitoring Priority 218
+Priority,NCWAP 2015 Monitoring Priority 219
+Priority,NCWAP 2015 Monitoring Priority 220
+Priority,NCWAP 2015 Monitoring Priority 221
+Priority,NCWAP 2015 Monitoring Priority 222
+Priority,NCWAP 2015 Monitoring Priority 272
+Priority,NCWAP 2015 Monitoring Priority 283
+Priority,NCWAP 2015 Monitoring Priority 291
+Priority,NCWAP 2015 Monitoring Priority 297
+Priority,NCWAP 2015 Monitoring Priority 298
+Priority,NCWAP 2015 Monitoring Priority 299
+Priority,NCWAP 2015 Monitoring Priority 311
+Priority,NCWAP 2015 Monitoring Priority 312
+Priority,NCWAP 2015 Monitoring Priority 313
+Priority,NCWAP 2015 Monitoring Priority 325
+Priority,NCWAP 2015 Monitoring Priority 34
+Priority,NCWAP 2015 Monitoring Priority 35
+Priority,NCWAP 2015 Monitoring Priority 351
+Priority,NCWAP 2015 Monitoring Priority 352
+Priority,NCWAP 2015 Monitoring Priority 353
+Priority,NCWAP 2015 Monitoring Priority 354
+Priority,NCWAP 2015 Monitoring Priority 36
+Priority,NCWAP 2015 Monitoring Priority 367
+Priority,NCWAP 2015 Monitoring Priority 368
+Priority,NCWAP 2015 Monitoring Priority 369
+Priority,NCWAP 2015 Monitoring Priority 37
+Priority,NCWAP 2015 Monitoring Priority 370
+Priority,NCWAP 2015 Monitoring Priority 371
+Priority,NCWAP 2015 Monitoring Priority 38
+Priority,NCWAP 2015 Monitoring Priority 385
+Priority,NCWAP 2015 Monitoring Priority 386
+Priority,NCWAP 2015 Monitoring Priority 387
+Priority,NCWAP 2015 Monitoring Priority 39
+Priority,NCWAP 2015 Monitoring Priority 40
+Priority,NCWAP 2015 Monitoring Priority 400
+Priority,NCWAP 2015 Monitoring Priority 41
+Priority,NCWAP 2015 Monitoring Priority 416
+Priority,NCWAP 2015 Monitoring Priority 417
+Priority,NCWAP 2015 Monitoring Priority 433
+Priority,NCWAP 2015 Monitoring Priority 448
+Priority,NCWAP 2015 Monitoring Priority 449
+Priority,NCWAP 2015 Monitoring Priority 450
+Priority,NCWAP 2015 Monitoring Priority 460
+Priority,NCWAP 2015 Monitoring Priority 461
+Priority,NCWAP 2015 Monitoring Priority 462
+Priority,NCWAP 2015 Monitoring Priority 480
+Priority,NCWAP 2015 Monitoring Priority 492
+Priority,NCWAP 2015 Monitoring Priority 493
+Priority,NCWAP 2015 Monitoring Priority 494
+Priority,NCWAP 2015 Monitoring Priority 505
+Priority,NCWAP 2015 Monitoring Priority 506
+Priority,NCWAP 2015 Monitoring Priority 507
+Priority,NCWAP 2015 Monitoring Priority 541
+Priority,NCWAP 2015 Monitoring Priority 542
+Priority,NCWAP 2015 Monitoring Priority 543
+Priority,NCWAP 2015 Monitoring Priority 544
+Priority,NCWAP 2015 Monitoring Priority 559
+Priority,NCWAP 2015 Monitoring Priority 560
+Priority,NCWAP 2015 Monitoring Priority 572
+Priority,NCWAP 2015 Monitoring Priority 573
+Priority,NCWAP 2015 Monitoring Priority 596
+Priority,NCWAP 2015 Monitoring Priority 611
+Priority,NCWAP 2015 Monitoring Priority 69
+Priority,NCWAP 2015 Monitoring Priority 70
+Priority,NCWAP 2015 Monitoring Priority 71
+Priority,NCWAP 2015 Monitoring Priority 72
+Priority,NCWAP 2015 Monitoring Priority 99
+Priority,NCWAP 2015 Research Priority 10
+Priority,NCWAP 2015 Research Priority 109
+Priority,NCWAP 2015 Research Priority 110
+Priority,NCWAP 2015 Research Priority 120
+Priority,NCWAP 2015 Research Priority 133
+Priority,NCWAP 2015 Research Priority 134
+Priority,NCWAP 2015 Research Priority 135
+Priority,NCWAP 2015 Research Priority 136
+Priority,NCWAP 2015 Research Priority 156
+Priority,NCWAP 2015 Research Priority 157
+Priority,NCWAP 2015 Research Priority 158
+Priority,NCWAP 2015 Research Priority 159
+Priority,NCWAP 2015 Research Priority 160
+Priority,NCWAP 2015 Research Priority 186
+Priority,NCWAP 2015 Research Priority 187
+Priority,NCWAP 2015 Research Priority 2
+Priority,NCWAP 2015 Research Priority 206
+Priority,NCWAP 2015 Research Priority 21
+Priority,NCWAP 2015 Research Priority 210
+Priority,NCWAP 2015 Research Priority 211
+Priority,NCWAP 2015 Research Priority 212
+Priority,NCWAP 2015 Research Priority 213
+Priority,NCWAP 2015 Research Priority 214
+Priority,NCWAP 2015 Research Priority 22
+Priority,NCWAP 2015 Research Priority 23
+Priority,NCWAP 2015 Research Priority 24
+Priority,NCWAP 2015 Research Priority 245
+Priority,NCWAP 2015 Research Priority 25
+Priority,NCWAP 2015 Research Priority 251
+Priority,NCWAP 2015 Research Priority 26
+Priority,NCWAP 2015 Research Priority 268
+Priority,NCWAP 2015 Research Priority 269
+Priority,NCWAP 2015 Research Priority 27
+Priority,NCWAP 2015 Research Priority 270
+Priority,NCWAP 2015 Research Priority 271
+Priority,NCWAP 2015 Research Priority 28
+Priority,NCWAP 2015 Research Priority 281
+Priority,NCWAP 2015 Research Priority 282
+Priority,NCWAP 2015 Research Priority 289
+Priority,NCWAP 2015 Research Priority 29
+Priority,NCWAP 2015 Research Priority 290
+Priority,NCWAP 2015 Research Priority 295
+Priority,NCWAP 2015 Research Priority 3
+Priority,NCWAP 2015 Research Priority 30
+Priority,NCWAP 2015 Research Priority 308
+Priority,NCWAP 2015 Research Priority 309
+Priority,NCWAP 2015 Research Priority 31
+Priority,NCWAP 2015 Research Priority 310
+Priority,NCWAP 2015 Research Priority 32
+Priority,NCWAP 2015 Research Priority 320
+Priority,NCWAP 2015 Research Priority 322
+Priority,NCWAP 2015 Research Priority 323
+Priority,NCWAP 2015 Research Priority 33
+Priority,NCWAP 2015 Research Priority 336
+Priority,NCWAP 2015 Research Priority 345
+Priority,NCWAP 2015 Research Priority 346
+Priority,NCWAP 2015 Research Priority 347
+Priority,NCWAP 2015 Research Priority 348
+Priority,NCWAP 2015 Research Priority 349
+Priority,NCWAP 2015 Research Priority 350
+Priority,NCWAP 2015 Research Priority 363
+Priority,NCWAP 2015 Research Priority 364
+Priority,NCWAP 2015 Research Priority 365
+Priority,NCWAP 2015 Research Priority 366
+Priority,NCWAP 2015 Research Priority 384
+Priority,NCWAP 2015 Research Priority 397
+Priority,NCWAP 2015 Research Priority 4
+Priority,NCWAP 2015 Research Priority 409
+Priority,NCWAP 2015 Research Priority 410
+Priority,NCWAP 2015 Research Priority 411
+Priority,NCWAP 2015 Research Priority 412
+Priority,NCWAP 2015 Research Priority 413
+Priority,NCWAP 2015 Research Priority 414
+Priority,NCWAP 2015 Research Priority 415
+Priority,NCWAP 2015 Research Priority 429
+Priority,NCWAP 2015 Research Priority 430
+Priority,NCWAP 2015 Research Priority 431
+Priority,NCWAP 2015 Research Priority 432
+Priority,NCWAP 2015 Research Priority 444
+Priority,NCWAP 2015 Research Priority 445
+Priority,NCWAP 2015 Research Priority 446
+Priority,NCWAP 2015 Research Priority 447
+Priority,NCWAP 2015 Research Priority 458
+Priority,NCWAP 2015 Research Priority 459
+Priority,NCWAP 2015 Research Priority 476
+Priority,NCWAP 2015 Research Priority 477
+Priority,NCWAP 2015 Research Priority 478
+Priority,NCWAP 2015 Research Priority 479
+Priority,NCWAP 2015 Research Priority 489
+Priority,NCWAP 2015 Research Priority 490
+Priority,NCWAP 2015 Research Priority 491
+Priority,NCWAP 2015 Research Priority 5
+Priority,NCWAP 2015 Research Priority 504
+Priority,NCWAP 2015 Research Priority 515
+Priority,NCWAP 2015 Research Priority 516
+Priority,NCWAP 2015 Research Priority 517
+Priority,NCWAP 2015 Research Priority 518
+Priority,NCWAP 2015 Research Priority 537
+Priority,NCWAP 2015 Research Priority 538
+Priority,NCWAP 2015 Research Priority 539
+Priority,NCWAP 2015 Research Priority 540
+Priority,NCWAP 2015 Research Priority 552
+Priority,NCWAP 2015 Research Priority 553
+Priority,NCWAP 2015 Research Priority 555
+Priority,NCWAP 2015 Research Priority 556
+Priority,NCWAP 2015 Research Priority 557
+Priority,NCWAP 2015 Research Priority 558
+Priority,NCWAP 2015 Research Priority 569
+Priority,NCWAP 2015 Research Priority 570
+Priority,NCWAP 2015 Research Priority 594
+Priority,NCWAP 2015 Research Priority 595
+Priority,NCWAP 2015 Research Priority 6
+Priority,NCWAP 2015 Research Priority 603
+Priority,NCWAP 2015 Research Priority 604
+Priority,NCWAP 2015 Research Priority 608
+Priority,NCWAP 2015 Research Priority 609
+Priority,NCWAP 2015 Research Priority 610
+Priority,NCWAP 2015 Research Priority 67
+Priority,NCWAP 2015 Research Priority 68
+Priority,NCWAP 2015 Research Priority 7
+Priority,NCWAP 2015 Research Priority 8
+Priority,NCWAP 2015 Research Priority 80
+Priority,NCWAP 2015 Research Priority 81
+Priority,NCWAP 2015 Research Priority 82
+Priority,NCWAP 2015 Research Priority 83
+Priority,NCWAP 2015 Research Priority 84
+Priority,NCWAP 2015 Research Priority 85
+Priority,NCWAP 2015 Research Priority 9
+Priority,NCWAP 2015 Research Priority 98
+Priority,NCWAP 2015 Surveys Priority 1
+Priority,NCWAP 2015 Surveys Priority 107
+Priority,NCWAP 2015 Surveys Priority 108
+Priority,NCWAP 2015 Surveys Priority 119
+Priority,NCWAP 2015 Surveys Priority 131
+Priority,NCWAP 2015 Surveys Priority 132
+Priority,NCWAP 2015 Surveys Priority 155
+Priority,NCWAP 2015 Surveys Priority 176
+Priority,NCWAP 2015 Surveys Priority 177
+Priority,NCWAP 2015 Surveys Priority 178
+Priority,NCWAP 2015 Surveys Priority 179
+Priority,NCWAP 2015 Surveys Priority 18
+Priority,NCWAP 2015 Surveys Priority 180
+Priority,NCWAP 2015 Surveys Priority 19
+Priority,NCWAP 2015 Surveys Priority 196
+Priority,NCWAP 2015 Surveys Priority 197
+Priority,NCWAP 2015 Surveys Priority 199
+Priority,NCWAP 2015 Surveys Priority 20
+Priority,NCWAP 2015 Surveys Priority 200
+Priority,NCWAP 2015 Surveys Priority 201
+Priority,NCWAP 2015 Surveys Priority 202
+Priority,NCWAP 2015 Surveys Priority 203
+Priority,NCWAP 2015 Surveys Priority 204
+Priority,NCWAP 2015 Surveys Priority 279
+Priority,NCWAP 2015 Surveys Priority 280
+Priority,NCWAP 2015 Surveys Priority 287
+Priority,NCWAP 2015 Surveys Priority 288
+Priority,NCWAP 2015 Surveys Priority 293
+Priority,NCWAP 2015 Surveys Priority 294
+Priority,NCWAP 2015 Surveys Priority 306
+Priority,NCWAP 2015 Surveys Priority 307
+Priority,NCWAP 2015 Surveys Priority 318
+Priority,NCWAP 2015 Surveys Priority 319
+Priority,NCWAP 2015 Surveys Priority 332
+Priority,NCWAP 2015 Surveys Priority 333
+Priority,NCWAP 2015 Surveys Priority 334
+Priority,NCWAP 2015 Surveys Priority 335
+Priority,NCWAP 2015 Surveys Priority 342
+Priority,NCWAP 2015 Surveys Priority 343
+Priority,NCWAP 2015 Surveys Priority 344
+Priority,NCWAP 2015 Surveys Priority 359
+Priority,NCWAP 2015 Surveys Priority 360
+Priority,NCWAP 2015 Surveys Priority 361
+Priority,NCWAP 2015 Surveys Priority 362
+Priority,NCWAP 2015 Surveys Priority 382
+Priority,NCWAP 2015 Surveys Priority 383
+Priority,NCWAP 2015 Surveys Priority 407
+Priority,NCWAP 2015 Surveys Priority 408
+Priority,NCWAP 2015 Surveys Priority 424
+Priority,NCWAP 2015 Surveys Priority 425
+Priority,NCWAP 2015 Surveys Priority 426
+Priority,NCWAP 2015 Surveys Priority 427
+Priority,NCWAP 2015 Surveys Priority 428
+Priority,NCWAP 2015 Surveys Priority 440
+Priority,NCWAP 2015 Surveys Priority 441
+Priority,NCWAP 2015 Surveys Priority 442
+Priority,NCWAP 2015 Surveys Priority 443
+Priority,NCWAP 2015 Surveys Priority 456
+Priority,NCWAP 2015 Surveys Priority 457
+Priority,NCWAP 2015 Surveys Priority 475
+Priority,NCWAP 2015 Surveys Priority 486
+Priority,NCWAP 2015 Surveys Priority 487
+Priority,NCWAP 2015 Surveys Priority 488
+Priority,NCWAP 2015 Surveys Priority 503
+Priority,NCWAP 2015 Surveys Priority 512
+Priority,NCWAP 2015 Surveys Priority 513
+Priority,NCWAP 2015 Surveys Priority 514
+Priority,NCWAP 2015 Surveys Priority 523
+Priority,NCWAP 2015 Surveys Priority 524
+Priority,NCWAP 2015 Surveys Priority 534
+Priority,NCWAP 2015 Surveys Priority 535
+Priority,NCWAP 2015 Surveys Priority 536
+Priority,NCWAP 2015 Surveys Priority 550
+Priority,NCWAP 2015 Surveys Priority 551
+Priority,NCWAP 2015 Surveys Priority 565
+Priority,NCWAP 2015 Surveys Priority 566
+Priority,NCWAP 2015 Surveys Priority 567
+Priority,NCWAP 2015 Surveys Priority 590
+Priority,NCWAP 2015 Surveys Priority 591
+Priority,NCWAP 2015 Surveys Priority 607
+Priority,NCWAP 2015 Surveys Priority 62
+Priority,NCWAP 2015 Surveys Priority 63
+Priority,NCWAP 2015 Surveys Priority 64
+Priority,NCWAP 2015 Surveys Priority 65
+Priority,NCWAP 2015 Surveys Priority 66
+Priority,NCWAP 2015 Surveys Priority 77
+Priority,NCWAP 2015 Surveys Priority 78
+Priority,NCWAP 2015 Surveys Priority 79
+Priority,NCWAP 2015 Surveys Priority 89
+Priority,NCWAP 2015 Surveys Priority 95
+Priority,NCWAP 2015 Surveys Priority 96
+Priority,NCWAP 2015 Surveys Priority 97
+Habitat,Estuarine Wetland Communities
+Habitat,Bogs and Fens
+Habitat,Floodplains-Blackwater Systems
+Habitat,Floodplains-Brownwater Systems
+Habitat,Floodplains-Inland Systems
+Habitat,Freshwater Tidal Wetlands
+Habitat,Nonalluvial Mineral Wetlands
+Habitat,Pocosins
+Habitat,Upland Pools and Depressions
+Habitat,Upland Seepages and Spray Cliffs
+Habitat,Wet Pine Savannas
+Habitat,Spruce-Fir Forest
+Habitat,Northern Hardwood Forests
+Habitat,Cove Forests
+Habitat,Mafic Glades and Barrrens
+Habitat,Grass and Heath Balds
+Habitat,High Elevation Cliffs and Rock Outcrops
+Habitat,"Low Elevation Flatrocks, Cliffs, and Rock Outcrops"
+Habitat,Mesic Forests
+Habitat,Dry Coniferous Woodlands
+Habitat,Oak and Mixed Hardwood/Pine Forests and Managed Timber
+Habitat,Montane Oak Forests
+Habitat,Dry Longleaf Pine Communities
+Habitat,Maritime Forests
+Habitat,Maritime Grasslands
+Habitat,Sparsely Settled Mixed Habitats
+Habitat,Central Appalachian Broadleaf Forest Coniferous Forest Meadow Province
+Habitat,Successional Communities
+Habitat,Warmwater Streams
+Habitat,Caves and Mines
+Habitat,Coldwater Streams
+Habitat,Coolwater Streams
+Habitat,Estuarine Aquatic Communities
+Habitat,"Groundwater, Springs/Caves"
+Habitat,Headwater Streams/Small Creeks
+Habitat,Large River Systems
+Habitat,Medium River Systems
+Habitat,Natural Lakes
+Habitat,Reservoirs and Impoundments
+Habitat,"Sand, Shell, and Wrack Active Shoreline"
+Habitat,Small River Systems/Large Creeks
+Habitat,Stream Swamps
+Organization,Golden-Winged Warbler Working Group
+Organization,Conservation Trust for North Carolina
+Organization,North Carolina Wildlife Resources Commission
+Organization,United States North American Bird Conservation Initiative
+Organization,North Carolina Audubon Society
+Organization,United States Shorebird Conservation Partnership
+Organization,United States Fish and Wildlife Service
+Organization,American Oystercatcher Working Group
+Organization,Cornell Lab of Ornithology
+Organization,Atlantic Coast Joint Venture
+Organization,Appalachian Mountain Joint Venture
+Organization,Partners in Flight Eastern Working Group
+Organization,AFWA Migratory Shore and Upland Game Bird Working Group
+Organization,Golden Eagle Working Group
+Organization,Loggerhead Shrike Working Group
+Organization,Partners in Flight
+Organization,Southeast Conservation Adaptation Strategy
+Project,Golden-winged Warbler Distribution Gap Surveys
+Project,North Carolina Birding Trail
+Project,North Carolina Colonial Waterbird Surveys
+Project,Southeast Conservation Blueprint
+Plan,North Carolina Wildlife Action Plan
+Plan,South Atlantic Migratory Bird Initiative Implementation Plan 2008
+Plan,North Carolina Wildlife Action Plan 2015
+Plan,North Carolina Wildlife Action Plan 2005
+Plan,American Woodcock Management Plan 1990
+Plan,Partners In Flight Landbird Conservation Plan 2016
+Plan,Atlantic Flyway Shorebird Business Strategy 2013
+Plan,Conservation Plan For The American Oystercatcher 2007
+Plan,Conservation Action Plan For The Cerulean Warbler 2007
+Plan,Golden-Winged Warbler Status Review And Conservation Plan 2012
+Plan,Summary of Secretive Marsh Bird Surveys in the Atlantic Flyway 2020
+Geography,Bird Conservation Region 29
+Geography,Atlantic Coastal Plain
+Geography,Southern Blue Ridge
+Geography,Piedmont
+Geography,Sandhills
+Geography,Bird Conservation Region 27
+Geography,Bird Conservation Region 28
+Geography,Flyways
+Geography,Atlantic Flyway
+Geography,Atlantic Coast Joint Venture Region
+Geography,Appalachian Mountain Joint Venture Region
