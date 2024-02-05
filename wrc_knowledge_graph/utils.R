@@ -9,21 +9,19 @@
 HOST = "cluster0-shard-00-00.rzpx8.mongodb.net:27017"
 source("config.r")
 
-
-
-
-
 #############################################################################
 ## WILDLIFE ACTION PLAN
 
 ## Mongo Connection Parameters
 WAP_URI = sprintf(
-  paste0("mongodb://%s:%s@%s/%s?authSource=admin&replicaSet=",
-    "atlas-3olgg1-shard-0&readPreference=primary&ssl=true"),
-  USER,
-  PASS,
-  HOST,
-  "conservation_connections")
+    paste0(
+        "mongodb://%s:%s@%s/%s?authSource=admin&replicaSet=",
+        "atlas-3olgg1-shard-0&readPreference=primary&ssl=true"
+        ),
+    USER,
+    PASS,
+    HOST,
+    "conservation_connections")
 
 nodes <- mongo(
     "nodes",

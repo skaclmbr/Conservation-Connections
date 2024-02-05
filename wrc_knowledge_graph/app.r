@@ -18,8 +18,10 @@ if(!require(dplyr)) install.packages(
   "htmltools", repos = "http://cran.us.r-project.org")
 if(!require(shinythemes)) install.packages(
   "shinythemes", repos = "http://cran.us.r-project.org")
-if(!require(reactable)) install.packages(
-  "reactable", repos = "http://cran.us.r-project.org")
+if(!require(shinytreeview)) install.packages(
+  "shinytreeview", repos = "http://cran.us.r-project.org")
+# if(!require(reactable)) install.packages(
+#   "reactable", repos = "http://cran.us.r-project.org")
 if(!require(shinydashboard)) install.packages(
   "shinydashboard",
   repos = "http://cran.us.r-project.org"
@@ -51,7 +53,13 @@ ui <- navbarPage(
                 3,
                 # DT::dataTableOutput("nodeListTable"),
                 # verbatimTextOutput("nodeListSelected")
-                reactableOutput("nodeListTable")
+                # reactableOutput("nodeListTable")
+                treeviewInput(
+                  inputId = "nodeListTable",
+                  label = "Select an Item:",
+                  choices = make_tree(get_all_list(), c("type", "name")),
+                  multiple = FALSE
+                  )
             ),
             column(
                 6,
@@ -98,18 +106,19 @@ server <- function(input, output, session) {
     ## WAP Functions
 
     #get list of entities of type selected in entitySelect
-    curr_node <- reactive(getReactableState("nodeListTable", selected))
+    curr_node <- reactive(input$nodeListTable)
+    # curr_node <- reactive(getReactableState("nodeListTable", selected))
 
-    output$nodeListTable <- renderReactable({
-        reactable(
-            get_all_list(),
-            groupBy = "type",
-            selection = "single",
-            searchable = TRUE,
-            striped = TRUE,
-            highlight = TRUE
-        )
-    })
+    # output$nodeListTable <- renderReactable({
+    #     reactable(
+    #         get_all_list(),
+    #         groupBy = "type",
+    #         selection = "single",
+    #         searchable = TRUE,
+    #         striped = TRUE,
+    #         highlight = TRUE
+    #     )
+    # })
 
     # output$nodeListTable <- DT::renderDataTable(
     #     DT::datatable(
@@ -119,19 +128,19 @@ server <- function(input, output, session) {
     # )
 
     output$entityTitle <- renderPrint({
-        state <- req(getReactableState("nodeListTable"))
+        state <- req(input$nodeListTable)
         print(state)
 
-    #   HTML(paste0(
-    #     "<h3>",
-    #     getReactableState("nodeListTable"),
-    #     "</h3>"
-    #   ))
+      HTML(paste0(
+        "<h3>",
+        state,
+        "</h3>"
+      ))
     })
 
-    output$nodeDetails <- renderUI({
-        req(curr_node)
-        print(curr_node)
+    # output$nodeDetails <- renderUI({
+    #     req(curr_node)
+    #     print(curr_node)
     #   filter <- sprintf(
     #     '{"name": "%s"}',
     #     input$entitySelect
@@ -143,7 +152,7 @@ server <- function(input, output, session) {
     #   )
     #   HTML(r$wikitext)
 
-    })
+    # })
 
     # output$entityConnections <- renderDataTable({
     #   print("getting connections")

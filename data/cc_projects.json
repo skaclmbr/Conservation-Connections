@@ -3,13 +3,12 @@
         "name": "NC Bird Atlas",
         "type": "Project",
         "properties": {
-            "Has FY2324 Grant": "W-57-49",
-            "Has Organization": "NC Wildlife Resources Commission",
+            "Has Grants": ["W-57-49"],
             "Has Status" : "active",
-            "Cost Center" : "1152 3178 0000",
+            "Has Cost Center" : "1152 3178 0000",
             "Has Division" : "Wildlife Management",
             "Has Section" : "Wildlife Diversity",
-            "Has Primary Contact" : [
+            "Has Contacts" : [
                 "Scott K. Anderson",
                 "John C. Carpenter"
             ]
@@ -22,25 +21,24 @@
         "edges": [
             "2015 North Carolina Wildlife Action Plan",
             "NC Bird Atlas Database",
-            "Bachman's Sparrow"
+            "Bachman's Sparrow",
+            "NC Wildlife Resources Commission"
         ]
     },
     {
         "name": "NC Bird Atlas Database",
         "type": "Database",
         "properties": {
-            "Has FY2324 Grant": "W-57-49",
-            "Has Organization": "NC Wildlife Resources Commission",
+            "Has Grants": ["W-57-49"],
             "Has Status" : "active",
-            "Cost Center" : "1152 3178 0000",
+            "Has Cost Center" : "1152 3178 0000",
             "Has Division" : "Wildlife Management",
             "Has Section" : "Wildlife Diversity",
             "Has Platform" : "MongoDB",
-            "Has Primary Contact" : [
+            "Has Contacts" : [
                 "Scott K. Anderson",
                 "John C. Carpenter"
             ]
-
         },
         "categories": [
             "Database",
@@ -48,7 +46,134 @@
         ],
         "edges": [
             "NC Bird Atlas",
-            "Bachman's Sparrow"
+            "Bachman's Sparrow",
+            "NC Wildlife Resources Commission"
+        ]
+    },
+    {
+        "name": "SWG Develop or Revise Species Plans T-27-10",
+        "type": "Project",
+        "properties": {
+            "Has Grants": ["T-27-10"],
+            "Has Status" : "active",
+            "Has Start Date" : "2023-10-01",
+            "Has End Date" : "2024-09-30",
+            "Has Report Date" : "2024-10-01",
+            "Has Division" : "Wildlife Management",
+            "Has Section" : "Wildlife Diversity",
+            "Has Contacts" : [
+                "Kate Pipkin"
+            ],
+            "Has Objective Name": "Develop or revise species plans",
+            "Has Strategy" : "Planning",
+            "Has Proposed Objective" : "Develop/revise plans",
+            "Has Activities" : [
+                {"Species management planning" : 6}
+            ],
+            "Has Approach" : ""
+        },
+        "categories": [
+            "Herp Project"
+        ],
+        "edges": [
+            "Leatherback Sea Turtle",
+            "Loggerhead Sea Turtle",
+            "Southern Hog-nosed Snake",
+            "Kemp's Ridley Sea Turtle",
+            "American Alligator",
+            "Hickory Nut Gorge Green Salamander",
+            "Hawksbill Sea Turtle",
+            "Green Sea Turtle",
+            "Yonahlossee Salamander",
+            "NC Wildlife Resources Commission"
+        ]
+    },
+    {
+        "name": "SWG Review Environmental Projects/Plans T-27-10",
+        "type": "Project",
+        "properties": {
+            "Has Grants": ["T-27-10"],
+            "Has Grant Name": "State Wildlife Grant",
+            "Has Status" : "active",
+            "Has Start Date" : "2023-10-01",
+            "Has End Date" : "2024-09-30",
+            "Has Report Date" : "2024-10-01",
+            "Has Division" : "Wildlife Management",
+            "Has Section" : "Wildlife Diversity",
+            "Has Contacts" : [
+                "Kate Pipkin"
+            ],
+            "Has Objective Name": "Review 89 Environmental Projects/Plans",
+            "Has Strategy" : "Environmental Review",
+            "Has Proposed Objective" : "Review projects/plans",
+            "Has Activities" : [
+                {"Review of proposed projects/plans" : 89}
+            ],
+            "Has Approach" : ""
+        },
+        "categories": [
+            "Herpetofauna",
+            "Wildlife Diversity Operations"
+        ],
+        "edges": [
+            "Leatherback Sea Turtle",
+            "Loggerhead Sea Turtle",
+            "Southern Hog-nosed Snake",
+            "Kemp's Ridley Sea Turtle",
+            "American Alligator",
+            "Hickory Nut Gorge Green Salamander",
+            "Hawksbill Sea Turtle",
+            "Green Sea Turtle",
+            "Yonahlossee Salamander",
+            "NC Wildlife Resources Commission"
+        ]
+    },
+    {
+        "name": "Box Turtle Data Analysis T-27-3",
+        "type": "Project",
+        "properties": {
+            "Has Grants": ["T-27-3"],
+            "Has Grant Name": "State Wildlife Grant",
+            "Has Contract" : "WM-0319",
+            "Has Status" : "inactive",
+            "Has End Date" : "2023-09-01",
+            "Has Division" : "Wildlife Management",
+            "Has Section" : "Wildlife Diversity",
+            "Has Contacts" : [
+                "Gabrielle Graeter"
+            ],
+            "Has PI" : "J.J. Apodaca"
+        },
+        "categories": [
+            "Herpetofauna",
+            "Contract"
+        ],
+        "edges": [
+            "Box Turtle",
+            "NC Wildlife Resources Commission"
+        ]
+    },
+    {
+        "name": "Box Turtle Connection",
+        "type": "Project",
+        "properties": {
+            "Has Grants": ["T-27-10"],
+            "Has Grant Name": "State Wildlife Grant",
+            "Has Status" : "active",
+            "Has Start Date" : "2020-09-01",
+            "Has Division" : "Wildlife Management",
+            "Has Section" : "Wildlife Diversity",
+            "Has Contacts" : [
+                "Gabrielle Graeter"
+            ]
+        },
+        "categories": [
+            "Herpetofauna",
+            "Citizen Science"
+        ],
+        "edges": [
+            "Box Turtle",
+            "NC Wildlife Resources Commission"
         ]
     }
 ]
