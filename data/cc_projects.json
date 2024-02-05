@@ -1,0 +1,54 @@
+[
+    {
+        "name": "NC Bird Atlas",
+        "type": "Project",
+        "properties": {
+            "Has FY2324 Grant": "W-57-49",
+            "Has Organization": "NC Wildlife Resources Commission",
+            "Has Status" : "active",
+            "Cost Center" : "1152 3178 0000",
+            "Has Division" : "Wildlife Management",
+            "Has Section" : "Wildlife Diversity",
+            "Has Primary Contact" : [
+                "Scott K. Anderson",
+                "John C. Carpenter"
+            ]
+
+        },
+        "categories": [
+            "Project",
+            "Citizen Science"
+        ],
+        "edges": [
+            "2015 North Carolina Wildlife Action Plan",
+            "NC Bird Atlas Database",
+            "Bachman's Sparrow"
+        ]
+    },
+    {
+        "name": "NC Bird Atlas Database",
+        "type": "Database",
+        "properties": {
+            "Has FY2324 Grant": "W-57-49",
+            "Has Organization": "NC Wildlife Resources Commission",
+            "Has Status" : "active",
+            "Cost Center" : "1152 3178 0000",
+            "Has Division" : "Wildlife Management",
+            "Has Section" : "Wildlife Diversity",
+            "Has Platform" : "MongoDB",
+            "Has Primary Contact" : [
+                "Scott K. Anderson",
+                "John C. Carpenter"
+            ]
+
+        },
+        "categories": [
+            "Database",
+            "Citizen Science"
+        ],
+        "edges": [
+            "NC Bird Atlas",
+            "Bachman's Sparrow"
+        ]
+    }
+]
