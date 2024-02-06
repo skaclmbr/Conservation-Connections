@@ -12,14 +12,16 @@ if(!require(tidyverse)) install.packages(
   "tidyverse", repos = "http://cran.us.r-project.org")
 if(!require(mongolite)) install.packages(
   "mongolite", repos = "http://cran.us.r-project.org")
-if(!require(dplyr)) install.packages(
-  "dplyr", repos = "http://cran.us.r-project.org")
+# if(!require(dplyr)) install.packages(
+#   "dplyr", repos = "http://cran.us.r-project.org")
   if(!require(htmltools)) install.packages(
   "htmltools", repos = "http://cran.us.r-project.org")
 if(!require(shinythemes)) install.packages(
   "shinythemes", repos = "http://cran.us.r-project.org")
 if(!require(shinytreeview)) install.packages(
   "shinytreeview", repos = "http://cran.us.r-project.org")
+if(!require(tidyjson)) install.packages(
+  "tidyjson", repos = "http://cran.us.r-project.org")
 # if(!require(reactable)) install.packages(
 #   "reactable", repos = "http://cran.us.r-project.org")
 if(!require(shinydashboard)) install.packages(
@@ -29,7 +31,8 @@ if(!require(shinydashboard)) install.packages(
 
 #adds functions for tooltips
 if(!require(shinyBS)) install.packages(
-  "shinyBS", repos = "http://cran.us.r-project.org")
+  "shinyBS", repos = "http://cran.us.r-project.org"
+  )
 
 # load supporting files
 source("utils.R")
@@ -40,157 +43,122 @@ wrc_green = "#3F7664"
 ## Begin UI coding
 
 ui <- navbarPage(
-    "NC Wildlife Diversity Data Explorer",
-    theme = shinytheme("paper"),
-    collapsible = TRUE,
+  "NC Wildlife Diversity Data Explorer",
+  theme = shinytheme("paper"),
+  collapsible = TRUE,
 
-    ####################################################################
-    ## WILDLIFE ACTION PLAN
-    tabPanel(
-        "Wildlife Action Plan",
-        fluidRow(
-            column(
-                3,
-                # DT::dataTableOutput("nodeListTable"),
-                # verbatimTextOutput("nodeListSelected")
-                # reactableOutput("nodeListTable")
-                treeviewInput(
-                  inputId = "nodeListTable",
-                  label = "Select an Item:",
-                  choices = make_tree(get_all_list(), c("type", "name")),
-                  multiple = FALSE
-                  )
-            ),
-            column(
-                6,
-                # htmlOutput(
-                #   "entityTitle"
-                #   ),
-                # htmlOutput(
-                #   "entityDetails"
-                # )
-            ),
-            column(
-              3,
-              tags$h4("Connections"),
-            #   dataTableOutput(
-            #     "entityConnections"
-            #   )
-            )
-            )
-    ),
-    ####################################################################
-    ## NC BIRD ATLAS
-    tabPanel(
-        "NC Bird Atlas"
-    ),
-    ####################################################################
-    ## NA BAT
-    tabPanel(
-        "NA Bat"
+  ####################################################################
+  ## WILDLIFE ACTION PLAN
+  tabPanel(
+    "Wildlife Action Plan",
+    fluidRow(
+      column(
+        3,
+        treeviewInput(
+          inputId = "nodeListTable",
+          label = "Select an Item:",
+          choices = make_tree(get_all_list(), c("type", "name")),
+          multiple = FALSE
+        )
+      ),
+      column(
+        6,
+        htmlOutput(
+          "nodeTitle"
+        ),
+        htmlOutput(
+          "nodeProperties"
+        ),
+        htmlOutput(
+          "nodeDescription"
+        )
+      ),
+      column(
+        3,
+        tags$h4("Connections"),
+        dataTableOutput(
+          "nodeConnections"
+        )
+      )
     )
-
-
-
+  ),
+  ####################################################################
+  ## NC BIRD ATLAS
+  tabPanel(
+    "NC Bird Atlas"
+  ),
+  ####################################################################
+  ## NA BAT
+  tabPanel(
+    "NA Bat"
+  )
 )
-
 
 ########################################################################
 ## Begin server code
 
 server <- function(input, output, session) {
 
+###################################################################
+## WAP Functions
 
+#get list of entities of type selected in entitySelect
+curr_node <- reactive({
+  input$nodeListTable
+  print(input$nodeListTable)
+})
 
-    ###################################################################
-    ## WAP Functions
+curr_node_data <- reactive({
+  req(curr_node)
+  get_node_data(curr_node())
+})
+# types <- reactive(
+#   print(get_types())
+# )
 
-    #get list of entities of type selected in entitySelect
-    curr_node <- reactive(input$nodeListTable)
-    # curr_node <- reactive(getReactableState("nodeListTable", selected))
+output$nodeTitle <- renderUI({
+  print(curr_node())
+  HTML(paste0(
+    "<h3>",
+    curr_node(),
+    "</h3>"
+  ))
+})
 
-    # output$nodeListTable <- renderReactable({
-    #     reactable(
-    #         get_all_list(),
-    #         groupBy = "type",
-    #         selection = "single",
-    #         searchable = TRUE,
-    #         striped = TRUE,
-    #         highlight = TRUE
-    #     )
-    # })
+output$nodeDescription <- renderUI({
+  req(curr_node())
 
-    # output$nodeListTable <- DT::renderDataTable(
-    #     DT::datatable(
-    #         get_all_list(),
-    #         selection = "single"
-    #     )
-    # )
+  filter <- sprintf(
+    '{"name": "%s"}',
+    curr_node()
+  )
 
-    output$entityTitle <- renderPrint({
-        state <- req(input$nodeListTable)
-        print(state)
+  r <- nodes$find(
+    filter,
+    '{"description":1}'
+  )
 
-      HTML(paste0(
-        "<h3>",
-        state,
-        "</h3>"
-      ))
-    })
+  HTML(markdown(r$description))
 
-    # output$nodeDetails <- renderUI({
-    #     req(curr_node)
-    #     print(curr_node)
-    #   filter <- sprintf(
-    #     '{"name": "%s"}',
-    #     input$entitySelect
-    #     )
+})
 
-    #   r <- nodes$find(
-    #     filter,
-    #     '{"description":1}'
-    #   )
-    #   HTML(r$wikitext)
+output$nodeProperties <- renderPrint({
+  print("getting properties")
+  req(curr_node())
+  # p <- get_properties(curr_node())
+  # print(p)
+  # HTML(p)
+  curr_node_data()$props
+})
 
-    # })
+output$nodeConnections <- renderDataTable({
+  print("getting connections")
+  req(curr_node())
 
-    # output$entityConnections <- renderDataTable({
-    #   print("getting connections")
-    # #   filter <- sprintf(
-    # #     '{ "from" : "%s" }',
-    # #     input$entitySelect
-    # #   )
-    # #   project <- '{ "to" : 1, "type" : 1}'
-    # #   rsort <- '{ "type" : 1}'
+  r <- get_connections(curr_node())
 
-    #   pipeline <- sprintf(
-    #     paste0(
-    #         '[',
-    #         '{ "$match" : { "name" : "%s"}},',
-    #         #start graphLookup
-    #         '{"$graphLookup" : {',
-    #         '"from" : "nodes",',
-    #         '"startWith" : "$edges",',
-    #         '"connectFromField" : "edges",',
-    #         '"connectToField" : "name",',
-    #         '"as" : "connections",',
-    #         '"maxDepth" : 1,',
-    #         '} }', #end graphLookup
-    #         '{ "$project" : { "connections" : 1}} ',
-    #         '{ "$unwind" : {"path" : "$connections"}}',
-    #         '{ "$project" : { ',
-    #         '"node" : "$connections.name"',
-    #         '"type" : "$connections.type"',
-    #         '}}',
-    #         ']'
-    #     ),
-    #     input$entitySelect
-    #   )
-
-    #   r <- nodes$aggregate( pipeline)
-      
-    #   subset(r, select = c("node", "type"))
-    # })
+  subset(r, select = c("node", "type"))
+})
 
 }
 
