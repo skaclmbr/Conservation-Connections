@@ -51,70 +51,84 @@ get_types <- function() {
   nodes$aggregate(pipeline)
 }
 
-get_properties <- function(node){
+get_properties <- function(name){
   pipeline <- sprintf(
     paste0(
       '[',
       '{ "$match" : {"name" : "%s"}},',
-      '{ "$project" : { "name" : 1, "properties": 1}}',
-      # '{ "$unwind" : { "path": "$properties"}}',
+      '{ "$project" : { "properties": 1}},',
+      '{ "$unwind" : { "path": "$properties"}}',
       ']'
     ),
-    node
+    name
   )
-  print(pipeline)
-  props <- nodes$aggregate(pipeline)
-  print(props)
-  props <- props %>%
-    enter_object("properties") %>%
-    gather_object("type") %>%
-    append_values_string("value") %>%
-    select(c("type", "value")) %>%
-    as_data_frame.tbl_json()
 
-  print(props)
+  props <- nodes$aggregate(pipeline) %>%
+    jsonlite::flatten() %>%
+    gather(key = "type_rem", value = "value") %>%
+    mutate(type = sub("properties.","",type_rem)) %>%
+    subset(select = c("type", "value")) %>%
+    filter(type != "_id")
+  
+  return(props)
+}
+
+get_categories <- function(name){
+  pipeline <- sprintf(
+    paste0(
+      '[',
+      '{ "$match" : {"name" : "%s"}},',
+      '{ "$project" : { "categories": 1}},',
+      '{ "$unwind" : { "path": "$categories"}}',
+      ']'
+    ),
+    name
+  )
+
+  cats <- nodes$aggregate(pipeline) %>%
+    subset(select = c("categories"))
+  
+  return(cats)
+}
+
+get_description <- function(name) {
+    filter <- sprintf(
+    '{"name": "%s"}',
+    name
+  )
+
+  desc <- nodes$find(
+    filter,
+    '{"description":1}'
+  )
+  return(markdown(desc$description))
 }
 
 get_node_data <- function(name) {
-  #code to retrieve node information and store in this object
-  filter <- sprintf('{ "name" : "%s"}', name)
+  if (length(name) != 0){
+    all_props <- get_properties(name)
 
-  data <- nodes$find(filter, '{ "description" : 0}')
-  data <- jsonlite::toJSON(data)[0]
-  # data <- '{ "name": "American Oystercatcher", "type": "Species", "properties": { "Has AOS4 Code": "AMOY", "Has AOS59 Code": 446, "Has AOS6 Code": "HAEPAL", "Has AOS60 Code": 388, "Has Audubon Conservation Plan": 1, "Has Avibase Code": "981CE782575DD8E7", "Has Common Name": "American Oystercatcher", "Has eBird Code": "ameoys", "Has Family": "Haematopodidae", "Has Genus": "Haematopus", "Has Order": "Charadriiformes", "Has PIF Half Life": 0, "Has PIF Pop Est": 11000, "Has Plan": "South Atlantic Migratory Bird Initiative Implmentation Plan 2008", "Has Scientific Name": "Haematopus palliatus", "Has Species Taxonomy": "palliatus", "Has State Status": "special concern", "Has WAP15 ID": "ncwap15-spp-american-oystercatcher", "Is Audubon Priority": 1, "Is NC Present": "NC", "Is SGCN": 1, "Is WAP Management Concern": 1, "Present Breeding": 1, "Present Wintering": 1, "Was WAP Evaluated": 1 }, "categories": [ "Species", "Bird", "Charadriiformes", "Haematopodidae", "NC SGCN", "NC Management Concern" ], "edges": [ "Estuarine Wetland Communities", "Maritime Grasslands", "Sand, Shell, and Wrack Active Shoreline", "Atlantic Flyway Shorebird Business Strategy 2013", "Conservation Plan For The American Oystercatcher 2007", "American Oystercatcher Working Group", "South Atlantic Migratory Bird Initiative Implementation Plan 2008", "NCWAP 2015 Conservation Programs And Partnerships Priority 380", "NCWAP 2015 Surveys Priority 361" ] }'
-  print(data)
-  # props <- data
-  props <- data %>%
-    as.tbl_json() %>%
-    enter_object("properties") %>%
-    gather_object("type") %>%
-    append_values_string("value") %>%
-    select(c("type", "value")) #%>%
-    # as_data_frame.tbl_json()
+    all_cats <- get_categories(name)
 
-  print(props)
-  cats <- data %>%
-    as.tbl_json() %>%
-    enter_object("categories") %>%
-    gather_array("type") %>%
-    as_data_frame.tbl_json()
+    all_edges <- get_connections(name)
 
-  print(cats)
-  edges <- ""
-
-  description <- ""
-
-  results <- list(
-    name = name,
-    cats = cats,
-    props = props,
-    edges = edges,
-    description = description
-  )
-  return(results)
+    desc <- get_description(name)
+    
+    results <- list(
+      cats = all_cats,
+      props = all_props,
+      edges = all_edges,
+      description = desc
+    )
+    print("gnd function completed")
+    print(head(results$edges))
+    return(results)
+  } else {
+    return("")
+  }
 }
 
-get_connections <- function(n) {
+get_connections <- function(name) {
   pipeline <- sprintf(
     paste0(
       '[',
@@ -136,10 +150,13 @@ get_connections <- function(n) {
       '}}',
       ']'
     ),
-    n
+    name
   )
-
-  nodes$aggregate(pipeline)
+  edges <- nodes$aggregate(pipeline) %>% 
+    subset(select = c("node", "type"))
+  print("connections retrieved")
+  print(head(edges))
+  return(edges)
 }
 
 get_dd_list <- function(type) {

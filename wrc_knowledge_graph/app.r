@@ -18,16 +18,24 @@ if(!require(mongolite)) install.packages(
   "htmltools", repos = "http://cran.us.r-project.org")
 if(!require(shinythemes)) install.packages(
   "shinythemes", repos = "http://cran.us.r-project.org")
-if(!require(shinytreeview)) install.packages(
-  "shinytreeview", repos = "http://cran.us.r-project.org")
-if(!require(tidyjson)) install.packages(
-  "tidyjson", repos = "http://cran.us.r-project.org")
+# if(!require(shinytreeview)) install.packages(
+if(!require(treemap)) install.packages(
+  "treemap", repos = "http://cran.us.r-project.org")
+if(!require(d3tree)) install.packages(
+  "d3tree", repos = "http://cran.us.r-project.org")
+# if(!require(shinytreeview)) install.packages(
+#   "shinytreeview", repos = "http://cran.us.r-project.org")
+# if(!require(tidyjson)) install.packages(
+#   "tidyjson", repos = "http://cran.us.r-project.org")
 # if(!require(reactable)) install.packages(
 #   "reactable", repos = "http://cran.us.r-project.org")
 if(!require(shinydashboard)) install.packages(
   "shinydashboard",
   repos = "http://cran.us.r-project.org"
 )
+  
+if(!require(stringr)) install.packages(
+  "stringr", repos = "http://cran.us.r-project.org")
 
 #adds functions for tooltips
 if(!require(shinyBS)) install.packages(
@@ -49,6 +57,9 @@ ui <- navbarPage(
 
   ####################################################################
   ## WILDLIFE ACTION PLAN
+  ## see here for data entry form: 
+  ## https://shanghai.hosting.nyu.edu/data/r/case-4-database-management-shiny.html
+  
   tabPanel(
     "Wildlife Action Plan",
     fluidRow(
@@ -76,6 +87,7 @@ ui <- navbarPage(
       column(
         3,
         tags$h4("Connections"),
+        d3treeOutput("treeMap"),
         dataTableOutput(
           "nodeConnections"
         )
@@ -108,10 +120,10 @@ curr_node <- reactive({
   print(input$nodeListTable)
 })
 
-curr_node_data <- reactive({
-  req(curr_node)
-  get_node_data(curr_node())
-})
+# curr_node_data <- reactive({
+#   req(curr_node)
+#   get_node_data(curr_node())
+# })
 # types <- reactive(
 #   print(get_types())
 # )
@@ -127,37 +139,23 @@ output$nodeTitle <- renderUI({
 
 output$nodeDescription <- renderUI({
   req(curr_node())
-
-  filter <- sprintf(
-    '{"name": "%s"}',
-    curr_node()
-  )
-
-  r <- nodes$find(
-    filter,
-    '{"description":1}'
-  )
-
-  HTML(markdown(r$description))
-
+  HTML(get_description(curr_node()))
 })
 
 output$nodeProperties <- renderPrint({
   print("getting properties")
   req(curr_node())
-  # p <- get_properties(curr_node())
-  # print(p)
-  # HTML(p)
-  curr_node_data()$props
+  print(get_properties(curr_node()))
 })
 
 output$nodeConnections <- renderDataTable({
   print("getting connections")
   req(curr_node())
+  get_connections(curr_node())
+})
 
-  r <- get_connections(curr_node())
-
-  subset(r, select = c("node", "type"))
+output$treeMap <- renderD3tree({
+  
 })
 
 }
